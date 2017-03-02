@@ -6,10 +6,11 @@
 \usepackage{sectsty}
 \usepackage{titlesec}
 \usepackage{enumitem}
+\usepackage{amssymb}
 \usepackage{fancyhdr}
 \usepackage{graphicx}
 \usepackage{hyperref}
-
+\usepackage[usenames, dvipsnames]{color}
 
 \usepackage{sidecap}
 \usepackage[font=sf]{caption}
@@ -23,14 +24,14 @@
  top=25mm,
  footskip=18mm
  }
- 
+
 \fontfamily{lmss}\selectfont 
 \pagestyle{fancy}
 \fancyhf{}
 \renewcommand{\headrulewidth}{0pt}
 \fancyhead[LE,RO]{\thepage}
 \lfoot{\fontfamily{lmss}\selectfont Creative Commons BY-NC-SA}
-\rfoot{\fontfamily{lmss}\selectfont Alkuperäinen tekijä (2016) Anni Järvenpää}
+\rfoot{\fontfamily{lmss}\selectfont Alkuperäinen tekijä (2017) Anni Järvenpää}
 
 \newenvironment{vaihetaso1}{%
     \LARGE
@@ -53,17 +54,49 @@
 
 \setitemize{topsep=0pt,parsep=10pt}
 
-\newcommand{\laatikkoyksi}{\raisebox{0ex}{\framebox(15,15)}}
+\newcommand{\laatikkoyksi}{\raisebox{0ex}{$\square$}}
 \renewcommand{\labelitemi}{\laatikkoyksi}
-\newcommand{\laatikkokaksi}{\raisebox{0ex}{\framebox(12,12)}}
+\newcommand{\laatikkokaksi}{\raisebox{0ex}{$\square$}}
 \renewcommand{\labelitemii}{\laatikkokaksi}
-\newcommand{\laatikkokolme}{\raisebox{0ex}{\framebox(10,10)}}
+\newcommand{\laatikkokolme}{\raisebox{0ex}{$\square$}}
 \renewcommand{\labelitemiii}{\laatikkokolme}
 
 \sectionfont{\fontfamily{lmss}\fontsize{35}{35}\selectfont}
 \subsectionfont{\fontsize{25}{40}\fontfamily{lmss}\selectfont}
 \titlespacing*{\section}{3em}{0em}{2em}
 \titlespacing*{\subsection}{1.5em}{1em}{1em}
+
+\newcommand{\valitse}{\ensuremath{%
+  \mathchoice{\includegraphics[height=2ex]{kuvat/valitse.png}}
+    {\includegraphics[height=2ex]{kuvat/valitse.png}}
+    {\includegraphics[height=1.5ex]{kuvat/valitse.png}}
+    {\includegraphics[height=1ex]{kuvat/valitse.png}}
+}}
+
+\newcommand{\piirra}{\ensuremath{%
+  \mathchoice{\includegraphics[height=2ex]{kuvat/piirra.png}}
+    {\includegraphics[height=2ex]{kuvat/piirra.png}}
+    {\includegraphics[height=1.5ex]{kuvat/piirra.png}}
+    {\includegraphics[height=1ex]{kuvat/piirra.png}}
+}}
+
+\newcommand{\lippu}{\ensuremath{%
+  \mathchoice{\includegraphics[height=2ex]{kuvat/lippu.png}}
+    {\includegraphics[height=2ex]{kuvat/lippu.png}}
+    {\includegraphics[height=1.5ex]{kuvat/lippu.png}}
+    {\includegraphics[height=1ex]{kuvat/lippu.png}}
+}}
+
+\definecolor{liike}{RGB}{74, 108, 212}
+\definecolor{ulkonako}{RGB}{138, 85, 215}
+\definecolor{aani}{RGB}{187, 66, 195}
+\definecolor{kyna}{RGB}{14, 154, 108}
+\definecolor{tieto}{RGB}{238, 125, 22}
+\definecolor{tapahtumat}{RGB}{200, 131, 48}
+\definecolor{ohjaus}{RGB}{225, 169, 26}
+\definecolor{tuntoaisti}{RGB}{44, 165, 226}
+\definecolor{toiminnot}{RGB}{92, 183, 18}
+\definecolor{lohkot}{RGB}{99, 45, 153}
 
 
 \begin{document}
@@ -95,6 +128,22 @@
 	\end{vaihetaso2}
 	\item Kolmas vaihe
 	\item Neljäs vaihe
+\end{vaihetaso1}
+
+\subsection*{Esimerkkejä värien käytöistä}
+\begin{vaihetaso1}
+	\item Paljon ohjeita, joissa käytetään eri kategorioiden palikoita.
+	\item \textcolor{liike}{Liikunta} on tärkeämpää kuin \textcolor{ulkonako}{ulkonäkö}. 
+	\begin{vaihetaso2}
+		\item Välillä voi käyttää \textcolor{aani}{ääntä} ja \textcolor{kyna}{kynää}.
+		\item Oispa \textcolor{tieto}{tietoo}.
+		\begin{vaihetaso3}
+			\item Muita vaihtoehtoja ovat \textcolor{ohjaus}{ohjaus} ja \textcolor{tuntoaisti}{tuntoaisti}.
+		\end{vaihetaso3}
+	\end{vaihetaso2}
+	\item \textcolor{lohkot}{Lohkot} \textcolor{toiminnot}{toimii}.
+	
+	\item Grafiikoita voi piirtää $\piirra$ tai valita valmiina $\valitse$. Vihreästä lipusta $\lippu$ starttaa.
 \end{vaihetaso1}
 
 \subsection*{Väliotsikko}
