@@ -2,7 +2,7 @@
 Resurssikeskus Linkin käyttämä LaTeX-pohja lasten käyttöön annettavien pelinteko-ohjeiden laatimiseen. Pohjasta on pyritty laatimaan yksinkertainen käyttää ja sen tuottamista ohjeista helppolukuisia ja lapsiin vetoavia. Kunkin kohdan vieressä on checkbox, joka helpottaa edistymisen seuraamista.
 
 ## Pohjan käyttö
-tex-tiedostoa voi editoida haluamallaan tekstieditorilla. Työtä voi sujuvoittaa jonkin verran käyttämällä tarkoitukseen laadittua LaTeX-editoria kuten [Texmakeria](http://www.xm1math.net/texmaker/).
+Helpoimmalla pääset, kun uutta ohjetta tehdessäsi kopioit koko tämän repon sisällön clone or download -namikkaa tai komentoriviä käyttäen ja muokkaat sitten pohja.tex -tiedostoa. Sitä voi editoida haluamallaan tekstieditorilla. Työtä voi sujuvoittaa jonkin verran käyttämällä tarkoitukseen laadittua LaTeX-editoria kuten [Texmakeria](http://www.xm1math.net/texmaker/).
 
 Tavallisessa käytössä ei tarvitse editoida mitään ennen `\begin{document}`-riviä ei tarvitse muokata, vaan kaikki sisältömuutokset tehdään sen jälkeen.
 
