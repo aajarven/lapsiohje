@@ -10,7 +10,7 @@ Tavallisessa käytössä ei tarvitse editoida mitään ennen `\begin{document}`-
 Helpoin tapa vaihtaa mallipelin kuva on korvata polussa `kuvat/esimerkki.png` oleva kuva uudella. Pelin kuvaus tulee kirjoittaa `\caption{}`-komennon aaltosulkujen väliin. On käytännöllistä laittaa kuvaukseen myös linkki mallipeliin, tämä onnistuu komennolle `\href{https://google.fi}{Linkki mallipeliin}`, jossa googlen urlin voi korvata pelin osoitteella ja jälkimmäisten aaltosulkujen väliin laittaa linkille haluamansa tekstin. Tekstissä kannattaa mainita pelin nimi ja tekijä, jotta se on mahdollista löytää myös paperisen ohjeen perusteella.
 
 ### Varsinaiset ohjeet
-Pelin teon vaiheet tulevat vaihetaso-environmenttien sisään, siis `\begin{vaihetaso1}` jälkeen mutta ennen `\end{vaihetaso1}`. Mikäli tahtoo käyttää alakohtia, voi `vaihetaso1` sisällä käyttää vastaavasti `vaihetaso2` ja sen sisällä `vaihetaso3`. Ennen kunkin kohdan haluttua tekstiä tulee olla komento `\item`.
+Pelin teon vaiheet tulevat vaihetaso-environmenttien sisään, siis `\begin{vaihetaso1}` jälkeen mutta ennen `\end{vaihetaso1}`. Mikäli tahtoo käyttää alakohtia, voi `vaihetaso1` sisällä käyttää vastaavasti `vaihetaso2` ja sen sisällä `vaihetaso3`. Ennen kutakin \begin{vaihetaso} -riviä täytyy olla tyhjä rivi, koska muuten edeltävän checkboxin tekstin riviväli muuttuu hassusti. Ennen kunkin työvaiheen haluttua tekstiä tulee olla komento `\item`, jotta siihen laitetaan checkboxi.
 
 Halutessaan ohjeen rakennetta voi selkeyttää käyttämällä väliotsikoita. Tämä onnistuu lisäämällä `\subsection*{Haluttu otsikko}`. Komennon tulee olla kaikkien vaihetasojen ulkopuolella.
 
