@@ -3,12 +3,6 @@
 
 \RequirePackage[usenames, dvipsnames]{color}
 
-\newcommand{\laatikkoyksi}{\raisebox{0ex}{$\square$}}
-\renewcommand{\labelitemi}{\laatikkoyksi}
-\newcommand{\laatikkokaksi}{\raisebox{0ex}{$\square$}}
-\renewcommand{\labelitemii}{\laatikkokaksi}
-\newcommand{\laatikkokolme}{\raisebox{0ex}{$\square$}}
-\renewcommand{\labelitemiii}{\laatikkokolme}
 
 % uuden scratchin kuvia
 \newcommand{\hahmovalikko}{\ensuremath{%
@@ -138,6 +132,7 @@
     {\includegraphics[height=1.5ex]{kuvat/kiertotyyli-alakierra2.png}}
     {\includegraphics[height=1ex]{kuvat/kiertotyyli-alakierra2.png}}
 }}
+
 % Uuden scartchin värien määrittelyt
 \definecolor{liike}{RGB}{76, 151, 255}
 \definecolor{ulkonako}{RGB}{153, 102, 255}
@@ -162,6 +157,15 @@
 \definecolor{toiminnot2}{RGB}{92, 183, 18}
 \definecolor{lohkot2}{RGB}{99, 45, 153}
 
+% checkboxit
+\newcommand{\laatikkoyksi}{\raisebox{0ex}{$\square$}}
+\renewcommand{\labelitemi}{\laatikkoyksi}
+\newcommand{\laatikkokaksi}{\raisebox{0ex}{$\square$}}
+\renewcommand{\labelitemii}{\laatikkokaksi}
+\newcommand{\laatikkokolme}{\raisebox{0ex}{$\square$}}
+\renewcommand{\labelitemiii}{\laatikkokolme}
+
+% fonttikoot vaihetasoille
 \newenvironment{vaihetaso1}{%
     \LARGE
     \itemize
